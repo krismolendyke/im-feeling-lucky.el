@@ -1,0 +1,2 @@
+Quickly look up stuff from Emacs with Google's [[http://en.wikipedia.org/wiki/Google_Search#.22I.27m_Feeling_Lucky.22][I'm Feeling Lucky]]
+feature.
