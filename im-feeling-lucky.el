@@ -1,3 +1,4 @@
+;; -*- lexical-binding: t; -*-
 ;;; im-feeling-lucky.el --- Google I'm Feeling Lucky on active region.
 
 ;;; Commentary:
@@ -36,10 +37,10 @@ The 'q' query string parameter should be omitted.")
   "Return a string of a `URL' containing a `QUERY'."
   (let* ((urlobj (url-generic-parse-url url))
          (type (url-type urlobj))
-	 (user (url-user urlobj))
-	 (pass (url-password urlobj))
-	 (host (url-host urlobj))
-	 (port (url-port-if-non-default urlobj))
+         (user (url-user urlobj))
+         (pass (url-password urlobj))
+         (host (url-host urlobj))
+         (port (url-port-if-non-default urlobj))
          (file (ifl--file urlobj query))
          (frag (url-target urlobj)))
     (url-recreate-url (url-parse-make-urlobj type user pass host port file frag
